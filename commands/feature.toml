@@ -1,0 +1,2 @@
+description = "Use when generating a lightweight feature spec (for code-forge) from existing specifications"
+prompt = "Activating the spec-forge skill: feature. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for feature."

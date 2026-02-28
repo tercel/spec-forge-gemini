@@ -1,0 +1,21 @@
+{
+  "name": "spec-forge-gemini",
+  "version": "1.0.0",
+  "description": "> Professional product and software requirements engineering — from PRDs and SRS to technical design, test plans, and feature decomposition.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "bash scripts/manage.sh package",
+    "install:user": "bash scripts/manage.sh install user",
+    "install:workspace": "bash scripts/manage.sh install workspace",
+    "deploy": "bash scripts/manage.sh all user",
+    "uninstall:user": "bash scripts/manage.sh uninstall user",
+    "uninstall:workspace": "bash scripts/manage.sh uninstall workspace"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

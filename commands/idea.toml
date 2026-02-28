@@ -1,0 +1,2 @@
+description = "Use when brainstorming, refining, or validating a new feature idea — starts the discovery phase"
+prompt = "Activating the spec-forge skill: idea. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for idea."

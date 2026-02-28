@@ -1,0 +1,2 @@
+description = "Use when decomposing a project into smaller, manageable sub-features — creates a project manifest"
+prompt = "Activating the spec-forge skill: decompose. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for decompose."

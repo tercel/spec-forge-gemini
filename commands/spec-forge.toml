@@ -1,0 +1,2 @@
+description = "Orchestrate full specification chain (PRD→SRS→Tech Design→Test Plan) or route subcommands"
+prompt = "Activating the spec-forge orchestrator. Please process the following input or context: {{args}}. If no input is provided, show the dashboard."

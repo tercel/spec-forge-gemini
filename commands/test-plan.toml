@@ -1,0 +1,2 @@
+description = "Use when writing a test plan, test strategy, or quality assurance document — follows IEEE 829 with traceability"
+prompt = "Activating the spec-forge skill: test-plan-generation. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for test-plan-generation."

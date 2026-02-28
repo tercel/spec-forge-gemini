@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+
+  "_tool": {
+    "name": "spec-forge",
+    "description": "Professional software specification generator — from PRDs to Technical Design",
+    "url": "https://github.com/tercel/spec-forge",
+    "skills_collection": "https://github.com/tercel/gemini-cli-skills"
+  },
+
+  "directories": {
+    "base": "",
+    "output": "docs/",
+    "ideas": "ideas/",
+    "features": "docs/features/"
+  },
+
+  "templates": {
+    "prd": "skills/prd-generation/references/template.md",
+    "srs": "skills/srs-generation/references/template.md",
+    "tech_design": "skills/tech-design-generation/references/template.md",
+    "test_plan": "skills/test-plan-generation/references/template.md"
+  },
+
+  "git": {
+    "auto_commit": false,
+    "gitignore_patterns": [
+      "ideas/**"
+    ]
+  }
+}

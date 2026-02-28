@@ -1,0 +1,2 @@
+description = "Use when writing a PRD, product spec, or product requirements — follows Google/Amazon/Stripe methodologies"
+prompt = "Activating the spec-forge skill: prd-generation. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for prd-generation."

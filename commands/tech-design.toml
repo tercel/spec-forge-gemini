@@ -1,0 +1,2 @@
+description = "Use when designing technical architecture, system design, or engineering specs — follows Amazon/Google technical specification standards"
+prompt = "Activating the spec-forge skill: tech-design-generation. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for tech-design-generation."
