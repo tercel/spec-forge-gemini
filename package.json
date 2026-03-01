@@ -1,7 +1,7 @@
 {
   "name": "spec-forge-gemini",
   "version": "1.0.0",
-  "description": "> Professional product and software requirements engineering — from PRDs and SRS to technical design, test plans, and feature decomposition.",
+  "description": "Professional product and software requirements engineering — from PRDs and SRS to technical design, test plans, and feature decomposition.",
   "main": "index.js",
   "directories": {
     "doc": "docs"

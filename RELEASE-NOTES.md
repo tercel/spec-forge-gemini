@@ -6,7 +6,7 @@
 
 ### Breaking Changes
 
-- **Renamed from `doc-lifecycle` to `spec-forge`**. Update your plugin installation accordingly.
+- **Renamed from `doc-lifecycle` to `spec-forge`**. Update your skill installation accordingly.
 
 ### New Features
 
@@ -16,8 +16,8 @@
 ### Upgrade Guide
 
 ```bash
-/plugin uninstall doc-lifecycle
-/plugin install spec-forge@claude-code-skills
+/skill uninstall doc-lifecycle
+npm run deploy
 ```
 
 ---
@@ -28,11 +28,11 @@
 
 ### Overview
 
-spec-forge (originally doc-lifecycle) is a Claude Code plugin that generates professional-grade software specifications at every stage of the development lifecycle, based on industry best practices from Google, Amazon, Stripe, IEEE, and ISTQB standards.
+spec-forge (originally doc-lifecycle) is a Gemini CLI skill that generates professional-grade software specifications at every stage of the development lifecycle, based on industry best practices from Google, Amazon, Stripe, IEEE, and ISTQB standards.
 
 ### Core Features
 
-#### `/prd` — Product Requirements Document Generation
+#### `/spec-forge:prd` — Product Requirements Document Generation
 - 5-step workflow: context scanning → clarification → generation → quality check → output
 - Market research & analysis (TAM/SAM/SOM) with source citations
 - Anti-pseudo-requirement principle: every feature backed by evidence of real demand
@@ -42,7 +42,7 @@ spec-forge (originally doc-lifecycle) is a Claude Code plugin that generates pro
 - Risk assessment matrix with likelihood/impact ratings
 - Quality checklist validation
 
-#### `/srs` — Software Requirements Specification Generation
+#### `/spec-forge:srs` — Software Requirements Specification Generation
 - IEEE 830 / ISO/IEC/IEEE 29148 compliant structure
 - Functional requirements (FR-MODULE-NNN) with actors, flows, acceptance criteria
 - Non-functional requirements (NFR-CATEGORY-NNN) with metrics and targets
@@ -51,7 +51,7 @@ spec-forge (originally doc-lifecycle) is a Claude Code plugin that generates pro
 - Modal verb discipline: "shall" / "should" / "may"
 - Quality checklist validation
 
-#### `/tech-design` — Technical Design Document Generation
+#### `/spec-forge:tech-design` — Technical Design Document Generation
 - C4 architecture diagrams (Context, Container, Component, Code)
 - At least 2 alternative solutions with comparison matrix
 - Complete parameter validation matrix for every API input
@@ -62,7 +62,7 @@ spec-forge (originally doc-lifecycle) is a Claude Code plugin that generates pro
 - Security, performance, observability, and deployment design
 - Quality checklist validation
 
-#### `/test-plan` — Test Plan & Test Cases Generation
+#### `/spec-forge:test-plan` — Test Plan & Test Cases Generation
 - IEEE 829 compliant test documentation
 - Real database testing policy: NO mocks for DB operations
 - Test case format (TC-MODULE-NNN) with exact DB state preconditions

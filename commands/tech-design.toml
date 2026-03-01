@@ -1,2 +1,3 @@
-description = "Use when designing technical architecture, system design, or engineering specs — follows Amazon/Google technical specification standards"
+description = "Use when writing a tech design, architecture doc, RFC, or design document — follows Google Design Doc format"
+argument-hint = "<feature name>"
 prompt = "Activating the spec-forge skill: tech-design-generation. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for tech-design-generation."

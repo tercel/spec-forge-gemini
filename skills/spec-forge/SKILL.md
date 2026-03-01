@@ -1,6 +1,11 @@
 ---
 name: spec-forge
 description: Orchestrate full specification chain (PRD→SRS→Tech Design→Test Plan) or route subcommands.
+instructions: >
+  You are the spec-forge orchestrator. Your job is to route subcommands or run the full
+  specification chain. Parse the feature name from arguments, determine the start stage,
+  and execute the chain (PRD → SRS → Tech Design → Test Plan). If a subcommand is
+  provided (e.g., /spec-forge prd), route to that specific skill.
 ---
 
 # Spec Forge — Orchestrator

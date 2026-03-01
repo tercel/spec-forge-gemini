@@ -1,6 +1,6 @@
 # spec-forge
 
-**Professional Software Specification Generator for Claude Code**
+**Professional Software Specification Generator for Gemini CLI**
 
 Generate industry-standard specifications — from early-stage brainstorming to PRD, SRS, Technical Design, and Test Plan — each usable standalone or as part of a full traceability chain.
 
@@ -190,7 +190,7 @@ Brainstorming ideas are stored in the project's `ideas/` directory. Add `ideas/`
 
 ## Works Great With
 
-**[code-forge](https://github.com/tercel/code-forge)** — spec-forge handles upstream specification (what to build and why), code-forge handles downstream execution (how to build it and ship it).
+**[code-forge](https://github.com/tercel/code-forge-gemini)** — spec-forge handles upstream specification (what to build and why), code-forge handles downstream execution (how to build it and ship it).
 
 **spec-forge works perfectly standalone — code-forge is optional.**
 

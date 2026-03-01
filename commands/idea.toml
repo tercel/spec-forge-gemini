@@ -1,2 +1,3 @@
-description = "Use when brainstorming, refining, or validating a new feature idea — starts the discovery phase"
+description = "Use when exploring a new idea — validates demand, analyzes competitors, and checks for pseudo-requirements before writing specs"
+argument-hint = "<idea name>"
 prompt = "Activating the spec-forge skill: idea. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for idea."
