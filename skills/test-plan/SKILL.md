@@ -1,5 +1,5 @@
 ---
-name: test-plan-generation
+name: test-plan
 description: >
   Generates professional Test Plan and Test Cases documents following IEEE 829
   test documentation standards, ISTQB testing methodologies, and Google Testing
@@ -28,6 +28,8 @@ A Test Plan is the master document that defines the scope, approach, resources, 
 Within the software development lifecycle a Test Plan sits downstream of the Software Requirements Specification (SRS) and Technical Design documents. It translates functional and non-functional requirements into concrete, verifiable test cases. A well-constructed Test Plan reduces the risk of undetected defects reaching production, provides measurable quality gates, and serves as the contractual agreement between development, QA, and product teams on what "done" means from a quality perspective.
 
 This skill treats the Test Plan as a living artifact. It is authored once, but it evolves as requirements change, new risks emerge, and test execution reveals areas needing deeper coverage.
+
+> **Note**: Test Plan is an on-demand document — it is NOT part of the default spec-forge auto chain (`idea → decompose → tech-design`). Use it when you need formal QA documentation or comprehensive test case planning.
 
 ## Six-Step Workflow
 

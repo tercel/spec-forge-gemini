@@ -3,17 +3,14 @@
   "version": "1.0.0",
   "description": "Professional product and software requirements engineering — from PRDs and SRS to technical design, test plans, and feature decomposition.",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "bash scripts/manage.sh package",
-    "install:user": "bash scripts/manage.sh install user",
-    "install:workspace": "bash scripts/manage.sh install workspace",
-    "deploy": "bash scripts/manage.sh all user",
-    "uninstall:user": "bash scripts/manage.sh uninstall user",
-    "uninstall:workspace": "bash scripts/manage.sh uninstall workspace"
+    "package": "gemini-forge package",
+    "install:user": "gemini-forge install user",
+    "install:workspace": "gemini-forge install workspace",
+    "deploy": "gemini-forge deploy user",
+    "uninstall:user": "gemini-forge uninstall user",
+    "uninstall:workspace": "gemini-forge uninstall workspace"
   },
   "keywords": [],
   "author": "",

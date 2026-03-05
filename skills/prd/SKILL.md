@@ -1,5 +1,5 @@
 ---
-name: prd-generation
+name: prd
 description: >
   Generates professional Product Requirements Documents (PRDs) following industry-standard
   methodologies. This skill activates when the user asks to write PRD, create a product
@@ -21,6 +21,8 @@ instructions: >
 A Product Requirements Document (PRD) is the central artifact that bridges product strategy and engineering execution. It captures the why, what, and how of a product initiative so that every stakeholder -- from designers and engineers to leadership and QA -- operates from a single source of truth. A well-written PRD reduces ambiguity, prevents scope creep, and provides a measurable framework against which the team can evaluate success.
 
 Within the product development lifecycle a PRD typically sits between the discovery phase (where problems are identified and validated) and the design/engineering phase (where solutions are built). It is not a static document; it evolves through drafts, reviews, and revisions as the team's understanding deepens. This skill treats the PRD as a living document and structures it accordingly.
+
+> **Note**: PRD is an on-demand document — it is NOT part of the default spec-forge auto chain (`idea → decompose → tech-design`). Use it when you need stakeholder alignment or formal product documentation.
 
 ## Five-Step Workflow
 

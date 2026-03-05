@@ -1,3 +1,3 @@
 description = "Use when writing a test plan, test cases, test strategy, or QA document — follows IEEE 829 and ISTQB standards"
 argument-hint = "<feature name>"
-prompt = "Activating the spec-forge skill: test-plan-generation. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for test-plan-generation."
+prompt = "Activating the spec-forge:test-plan for: {{args}}. If no input provided, start new Test Plan workflow."

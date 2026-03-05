@@ -1,5 +1,5 @@
 ---
-name: srs-generation
+name: srs
 description: >
   Generates professional Software Requirements Specification (SRS) documents based on IEEE 830,
   ISO/IEC/IEEE 29148, and Amazon technical specification standards. This skill activates when the
@@ -21,6 +21,8 @@ instructions: >
 A Software Requirements Specification (SRS) is a formal document that describes exactly what a software system must do and the constraints under which it must operate. It serves as the contractual bridge between stakeholders who define the product vision (captured in a PRD) and the engineering team that designs, builds, and tests the system. A well-written SRS eliminates ambiguity, reduces rework, and provides a single source of truth for every requirement the system must satisfy.
 
 The two foundational standards for SRS documents are **IEEE 830** (IEEE Recommended Practice for Software Requirements Specifications) and **ISO/IEC/IEEE 29148** (Systems and Software Engineering -- Life Cycle Processes -- Requirements Engineering). IEEE 830 established the canonical section structure -- introduction, overall description, specific requirements -- and defined the quality attributes every requirement must exhibit: correctness, unambiguity, completeness, consistency, ranking for importance, verifiability, modifiability, and traceability. ISO/IEC/IEEE 29148 modernized this foundation by integrating requirements engineering into the full systems and software lifecycle, emphasizing stakeholder needs analysis, requirements analysis, and requirements validation as continuous activities rather than one-time documentation events. This skill combines the structural rigor of both standards with the pragmatic, metric-driven approach found in Amazon technical specifications, where every requirement must be tied to a measurable outcome.
+
+> **Note**: SRS is an on-demand document — it is NOT part of the default spec-forge auto chain (`idea → decompose → tech-design`). Use it when you need formal requirements traceability for compliance, audit, or complex system engineering.
 
 ## Generation Workflow
 

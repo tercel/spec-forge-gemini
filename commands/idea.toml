@@ -1,3 +1,3 @@
 description = "Use when exploring a new idea — validates demand, analyzes competitors, and checks for pseudo-requirements before writing specs"
 argument-hint = "<idea name>"
-prompt = "Activating the spec-forge skill: idea. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for idea."
+prompt = "Activating the spec-forge:idea. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for idea."

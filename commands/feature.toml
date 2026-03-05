@@ -1,3 +1,0 @@
-description = "Use when creating a feature spec for code-forge — distills requirements into a concise, implementation-ready document"
-argument-hint = "<feature name>"
-prompt = "Activating the spec-forge skill: feature. Please process the following input or context: {{args}}. If no input is provided, proceed with the default workflow for feature."

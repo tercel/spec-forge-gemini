@@ -40,7 +40,7 @@ Summarize what you learned in 2-3 sentences. Do not present this to the user —
 
 ### Step 2: Scope Interview
 
-Use AskUserQuestion to understand project boundaries. Ask 3-5 rounds of questions, adapting based on answers.
+Use ask_user to understand project boundaries. Ask 3-5 rounds of questions, adapting based on answers.
 
 **Round 1 — The Shape:**
 - What are the main functional areas or modules of this project? (e.g., "auth, payments, notifications" or "it's a single API endpoint")
@@ -68,17 +68,17 @@ Based on the interview, determine: **single** or **multi-split**.
 | Multiple distinct systems (backend + frontend + pipeline) | Multi-split |
 | Repeated "and also..." in scope description | Multi-split |
 | No single clear purpose — hard to name in one phrase | Multi-split |
-| Would produce 10+ PRD requirement groups | Multi-split |
+| Would produce 10+ requirement groups | Multi-split |
 | Single cohesive system with tightly coupled components | Single |
 | Fully specifiable in a few paragraphs | Single |
 | No architectural decisions needed at the boundary level | Single |
-| Too unclear even after interview — need PRD to discover structure | Single |
+| Too unclear even after interview | Single |
 
 **Good split characteristics:**
 - Cohesive purpose — a clear goal or outcome
 - Bounded complexity — 1-3 major components
 - Clear interfaces — well-defined inputs and outputs
-- Each split is substantial enough for its own PRD → SRS → Tech Design → Test Plan chain
+- Each split is substantial enough for its own Tech Design + Feature Specs
 
 ### Step 4a: Single Feature Verdict
 
@@ -92,7 +92,7 @@ If the project is a single feature:
 If the project should be split:
 
 1. Present the proposed split structure to the user for confirmation
-2. Use AskUserQuestion: "Here's my proposed breakdown. Does this look right, or would you change anything?"
+2. Use ask_user: "Here's my proposed breakdown. Does this look right, or would you change anything?"
 3. If the user wants changes, adjust and re-confirm
 4. Once confirmed, write the manifest to `docs/project-{name}.md`
 
@@ -144,7 +144,7 @@ Display the result:
 ```
 Scope analysis complete: {name}
   Verdict: Single feature
-  Next: Running spec chain (PRD → SRS → Tech Design → Test Plan)
+  Next: Running spec chain (Tech Design + Feature Specs)
 ```
 
 **If multi-split:**
