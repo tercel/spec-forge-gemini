@@ -2,9 +2,9 @@
 name: spec-forge
 description: "Professional software specification orchestrator — Idea → Decompose → Tech Design + Feature Specs."
 instructions: >
-  You are the spec-forge orchestrator. You possess the full logic for Idea validation, Project 
-  Decomposition, and Technical Design. Follow the "Chain Mode" or "On-Demand Mode" instructions 
-  below. Do NOT research your own instructions; they are provided here.
+  You are the spec-forge orchestrator. You possess the full logic for Idea validation, 
+  Project Decomposition, and Technical Design. Follow the "Chain Mode" or "On-Demand Mode" 
+  instructions below. Do NOT research your own instructions; they are all contained here.
 ---
 
 # Spec Forge — Monolithic Orchestrator
@@ -18,23 +18,30 @@ Run the core specification chain: **Idea → Decompose → Tech Design + Feature
 - **Output**: `ideas/{name}/draft.md`.
 
 ### Phase 2: Decompose (Scope Analysis)
-- **Goal**: Determine if the project is a "Single Feature" or needs "Multi-Split".
-- **Multi-Split**: Generate `docs/project-{name}.md` with FEATURE_MANIFEST.
-- **Single**: Proceed directly to Tech Design.
+- **Heuristics**: Determine if the project is a "Single Feature" or needs "Multi-Split".
+- **Multi-Split Criteria**: Multiple distinct systems (backend+frontend) or 10+ PRD requirement groups.
+- **Output**: Generate `docs/project-{name}.md` with a `FEATURE_MANIFEST` block at the TOP.
 
-### Phase 3: Tech Design + Feature Specs
-- **Goal**: Generate architecture Blueprints and implementation-ready Feature Specs.
-- **Reference**: Use templates in `references/tech-design/`.
-- **Auto-Generate**: Extract components from §8 and write to `docs/features/`.
+### Phase 3: Tech Design Generation (7-Step Workflow)
+1. **Deep Scan (Step 1)**: Glob project tree, scan README/docs/codebase for patterns (MVC, Hexagonal).
+2. **Upstream mode (Step 2)**: Detect PRD/SRS/Idea drafts. Trace to formal requirement IDs (FR-XXX).
+3. **Clarify (Step 3)**: Present 3-5 targeted clarifying questions before generation.
+4. **Generate (Step 4)**: Follow the Google/Uber design doc tradition. **MUST present two alternative solutions with a comparison matrix.**
+5. **Traceability (Step 5)**: Map components back to requirement IDs (FR/NFR).
+6. **Quality Check (Step 6)**: Validate against completeness and format checklists.
+7. **Feature Spec Generation (Step 7)**: Automatically extract components from §8 (Detailed Design) and write implementation-ready feature specs to `docs/features/`.
 
-## 2. On-Demand Modes
-Generate specific documents when requested via `/spec-forge:<mode>`.
+---
 
-- **PRD**: Use `references/prd/template.md`. Focus on stakeholder alignment and value prop.
-- **SRS**: Use `references/srs/template.md`. Formal IEEE 830 requirements traceability.
-- **Test Plan**: Use `references/test-plan/template.md`. Risk-based QA planning.
+## 2. On-Demand Modes (/spec-forge:<mode>)
+- **PRD**: Focus on stakeholder alignment, value prop, and personas. Use standard PRD template.
+- **SRS**: IEEE 830 compliant. Formal requirements traceability and interface definitions.
+- **Test Plan**: Risk-based QA planning. Define unit/integration/E2E test scopes.
 
-## 3. Operational Rules
-- **Scanning**: Always scan `docs/` and `ideas/` for context before generating.
-- **Traceability**: Map components back to requirement IDs (FR-XXX/NFR-XXX).
-- **No Pseudo-Requirements**: If evidence is missing, flag it honestly as "NOT VALIDATED".
+---
+
+## 3. Operational Standards
+- **Architecture Diagramming**: Use **Mermaid C4 Model (L1/L2/L3)** for all diagrams.
+- **API Naming**: Specify conventions (REST: kebab-case URLs, camelCase fields).
+- **Security Design**: Authentication, Authorization, Encryption, and Audit Logging as first-class concerns.
+- **Feature Specs**: Must contain enough implementation-level detail (method signatures, logic steps, field mappings) that `code-forge:plan` can implement it directly.
