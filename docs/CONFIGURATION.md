@@ -29,8 +29,7 @@ project/
   "_tool": {
     "name": "spec-forge",
     "description": "Professional software specification generator — from PRDs to Technical Design",
-    "url": "https://github.com/tercel/spec-forge",
-    "skills_collection": "https://github.com/tercel/gemini-cli-skills"
+    "url": "https://github.com/tercel/spec-forge"
   },
 
   "directories": {
